@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ad1896aad6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="loading">
+    <!-- Loader -->
+    <div class="loader-container">
+      <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+          <circle
+            class="path"
+            cx="50"
+            cy="50"
+            r="20"
+            fill="none"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="container-fluid conteudo">
+      <div id="intro" class="container">
+        <div class="row justify-content-center align-items-center">
+          <!-- <div class="col-lg-5">
+             <img src="assets/ilustra2.png" alt="" class="img-fluid">
+          </div> -->
+          <div class="col-lg-12">
+            <div class="intro-text">
+              <h1>Hello!</h1>
+              <p>
+                I'm a front-end developer with 2+ years of experience and
+                currently based in Brazil. I build responsive, mobile-first web
+                apps and interfaces using these technologies:
+              </p>
+              <div class="tech-icons">
+                <i title="HTML5" class="fa-brands fa-html5"></i>
+                <i title="CSS3" class="fa-brands fa-css3-alt"></i>
+                <i title="JavaScript" class="fa-brands fa-js"></i>
+                <i title="Bootstrap 5" class="fa-brands fa-bootstrap"></i>
+                <i title="React js" class="fa-brands fa-react"></i>
+              </div>
+              <p>
+                Here you can find some of the projects I worked on. Feel free to
+                send me a message or connect w/ me on
+                <a
+                  href="https://www.upwork.com/freelancers/~0155ad82344b865ade"
+                  target="_blank"
+                  >upwork</a
+                >
+                or these social platforms:
+              </p>
+              <div class="links">
+                <a
+                  href="https://www.linkedin.com/in/luiz-brancher/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/criptoluiz" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="mailto:luiz.pb@cryptolab.net" target="_blank"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="projects" class="container-fluid">
+        <div class="container">
+          <h2>Projects</h2>
+          <hr />
+          <p>Here are some of my personal and professional projects.</p>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h3>ETA Landing Page</h3>
+                <p>Landing page developed with bootstrap 5, jquery and sass.</p>
+                <img
+                  class="img-fluid project-thumbnail"
+                  src="assets/ETA-CC.png"
+                  alt=""
+                />
+                <a
+                  href="https://criptoluiz.github.io/eta-viamao/"
+                  target="_blank"
+                  class="project-link"
+                  >Live preview</a
+                >
+              </div>
+              <div class="carousel-item">
+                <h3>React Js to-do app</h3>
+                <p>
+                  Simple to-do list app with theme switcher and listing options.
+                </p>
+                <img
+                  src="assets/REACT-TODO.png"
+                  alt=""
+                  class="img-fluid project-thumbnail"
+                />
+                <a
+                  href="https://criptoluiz.github.io/react-todo-app/"
+                  target="_blank"
+                  class="project-link"
+                  >Live preview</a
+                >
+              </div>
+              <div class="carousel-item">
+                <h3>React Js Jobs Listing</h3>
+                <p>
+                  React js job listing web app with simple selectors for list.
+                </p>
+                <img
+                  src="assets/jobs-listing.png"
+                  alt=""
+                  class="img-fluid project-thumbnail"
+                />
+                <a
+                  href="https://criptoluiz.github.io/static-job-listings-master/"
+                  target="_blank"
+                  class="project-link"
+                  >Live preview</a
+                >
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="contact" class="container-fluid">
+        <div class="container">
+          <h2>Contact</h2>
+          <hr />
+          <p>
+            You can contact me at <a href="linkedin.com">LinkedIn</a> or e-mail
+            me at
+            <a href="mailto:luiz.pb@cryptolab.net">luiz.pb@cryptolab.net</a>
+          </p>
+        </div>
+      </div> -->
+    </div>
+
+    <div id="stop" class="scrollTop">
+      <span
+        ><a class="btn-stop" href=""> <i class="fas fa-chevron-up"></i> </a
+      ></span>
+    </div>
+  </body>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/script.js"></script>
+</html>
