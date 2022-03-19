@@ -35,26 +35,26 @@ let items = $(".cards-row").children();
 $("#lp-tag").click(function () {
   for (var i = 0; i < items.length; i++) {
     if (items[i].classList.contains("react-js")) {
-      items[i].classList.add("d-none");
+      items[i].classList.add("card-hid");
     } else if (items[i].classList.contains("landing-page")) {
-      items[i].classList.remove("d-none");
+      items[i].classList.remove("card-hid");
     }
   }
 });
 $("#r-tag").click(function () {
   for (var i = 0; i < items.length; i++) {
     if (items[i].classList.contains("landing-page")) {
-      items[i].classList.add("d-none");
+      items[i].classList.add("card-hid");
     } else if (items[i].classList.contains("react-js")) {
-      items[i].classList.remove("d-none");
+      items[i].classList.remove("card-hid");
     }
   }
 });
 
 $("#reset-tag").click(function () {
   for (var i = 0; i < items.length; i++) {
-    if (items[i].classList.contains("d-none")) {
-      items[i].classList.remove("d-none");
+    if (items[i].classList.contains("card-hid")) {
+      items[i].classList.remove("card-hid");
     }
   }
 });
