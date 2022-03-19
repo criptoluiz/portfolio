@@ -87,13 +87,15 @@ body {
   align-items: center;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 .loading {
   overflow: hidden;
   height: 100vh;
+}
+
+/* </LOADER> */
+
+.hidden {
+  visibility: hidden;
 }
 
 .conteudo {
@@ -192,35 +194,65 @@ hr {
   transition-duration: 0.3s;
 }
 
-.carousel {
-  background-color: #555555;
-  border-radius: 15px;
-  box-shadow: 2px 3px 4px black;
-  margin-bottom: 2em;
-  width: 80%;
-  margin: 1em auto;
+#projects {
+  padding-bottom: 60px;
 }
 
-.carousel-item {
-  padding: 2em;
-  text-align: center;
-  height: 620px;
+.tag {
+  display: inline;
+  background-color: #cecece;
+  padding: 5px;
+  border-radius: 5px;
+  color: #202935;
+  transition-duration: 0.3s;
+}
+
+.tag:hover {
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+#reset-tag {
+  margin-left: 25px;
+  background-color: #4e6481;
+  color: #f4f4f4;
+}
+
+#reset-tag:hover {
+  background-color: #cecece;
+  color: #202920;
+}
+
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  max-width: 30%;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 5px 15px 15px 15px;
 }
 
 .project-thumbnail {
-  height: 400px;
+  height: 200px;
+  width: 95%;
   margin: 0.5em auto;
   border-radius: 5px;
+  display: block;
 }
 
 .project-link {
   display: block;
   border: 2px solid white;
   width: 150px;
-  padding: 0.8em 1em;
+  padding: 0.5em 1em;
   margin: 0.2em auto;
   border-radius: 8px;
-
+  text-align: center;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;

@@ -63,14 +63,21 @@
               </p>
               <div class="links">
                 <a
+                  title="linkedin"
                   href="https://www.linkedin.com/in/luiz-brancher/"
                   target="_blank"
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
-                <a href="https://github.com/criptoluiz" target="_blank"
+                <a
+                  title="github"
+                  href="https://github.com/criptoluiz"
+                  target="_blank"
                   ><i class="fa-brands fa-github"></i
                 ></a>
-                <a href="mailto:luiz.pb@cryptolab.net" target="_blank"
+                <a
+                  title="send an e-mail"
+                  href="mailto:luiz.pb@cryptolab.net"
+                  target="_blank"
                   ><i class="fa-solid fa-envelope"></i
                 ></a>
               </div>
@@ -83,87 +90,79 @@
           <h2>Projects</h2>
           <hr />
           <p>Here are some of my personal and professional projects.</p>
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            data-bs-interval="false"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <h3>ETA Landing Page</h3>
-                <p>Landing page developed with bootstrap 5, jquery and sass.</p>
-                <img
-                  class="img-fluid project-thumbnail"
-                  src="assets/ETA-CC.png"
-                  alt=""
-                />
-                <a
-                  href="https://criptoluiz.github.io/eta-viamao/"
-                  target="_blank"
-                  class="project-link"
-                  >Live preview</a
-                >
-              </div>
-              <div class="carousel-item">
-                <h3>React Js to-do app</h3>
-                <p>
-                  Simple to-do list app with theme switcher and listing options.
-                </p>
-                <img
-                  src="assets/REACT-TODO.png"
-                  alt=""
-                  class="img-fluid project-thumbnail"
-                />
-                <a
-                  href="https://criptoluiz.github.io/react-todo-app/"
-                  target="_blank"
-                  class="project-link"
-                  >Live preview</a
-                >
-              </div>
-              <div class="carousel-item">
-                <h3>React Js Jobs Listing</h3>
-                <p>
-                  React js job listing web app with simple selectors for list.
-                </p>
-                <img
-                  src="assets/jobs-listing.png"
-                  alt=""
-                  class="img-fluid project-thumbnail"
-                />
-                <a
-                  href="https://criptoluiz.github.io/static-job-listings-master/"
-                  target="_blank"
-                  class="project-link"
-                  >Live preview</a
-                >
-              </div>
+
+          <div class="tag-selector">
+            <p id="lp-tag" class="tag">landing pages</p>
+            <p id="r-tag" class="tag">react js</p>
+            <p id="e-tag" class="tag">e-commerce</p>
+            <p id="reset-tag" class="tag">reset</p>
+          </div>
+
+          <div class="cards-row">
+            <div class="project-card landing-page">
+              <img class="project-thumbnail" src="assets/ETA-CC.png" alt="" />
+              <h3>ETA Landing Page</h3>
+              <p>Landing page developed with bootstrap 5, jquery and sass.</p>
+
+              <a
+                href="https://criptoluiz.github.io/eta-viamao/"
+                target="_blank"
+                class="project-link"
+                >Live preview</a
+              >
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="project-card landing-page">
+              <img
+                class="project-thumbnail"
+                src="assets/sunnyside.png"
+                alt=""
+              />
+              <h3>Sunnyside agency</h3>
+              <p>Landing page developed with bootstrap 5.</p>
+              <br />
+              <a
+                href="https://criptoluiz.github.io/sunnyside-agency-landing-page/"
+                target="_blank"
+                class="project-link"
+                >Live preview</a
+              >
+            </div>
+            <div class="project-card react-js">
+              <img
+                src="assets/REACT-TODO.png"
+                alt=""
+                class="project-thumbnail"
+              />
+              <h3>React Js to-do app</h3>
+              <p>
+                Simple to-do list app with theme switcher and listing options.
+              </p>
+
+              <a
+                href="https://criptoluiz.github.io/react-todo-app/"
+                target="_blank"
+                class="project-link"
+                >Live preview</a
+              >
+            </div>
+            <div class="project-card react-js">
+              <img
+                src="assets/jobs-listing.png"
+                alt=""
+                class="project-thumbnail"
+              />
+              <h3>React Js Jobs Listing</h3>
+              <p>
+                React js job listing web app with simple selectors for list.
+              </p>
+
+              <a
+                href="https://criptoluiz.github.io/static-job-listings-master/"
+                target="_blank"
+                class="project-link"
+                >Live preview</a
+              >
+            </div>
           </div>
         </div>
       </div>

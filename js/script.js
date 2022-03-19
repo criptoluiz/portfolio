@@ -31,3 +31,30 @@ $(scrollTop).click(function () {
   );
   return false;
 }); // click() scroll top END
+let items = $(".cards-row").children();
+$("#lp-tag").click(function () {
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].classList.contains("react-js")) {
+      items[i].classList.add("d-none");
+    } else if (items[i].classList.contains("landing-page")) {
+      items[i].classList.remove("d-none");
+    }
+  }
+});
+$("#r-tag").click(function () {
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].classList.contains("landing-page")) {
+      items[i].classList.add("d-none");
+    } else if (items[i].classList.contains("react-js")) {
+      items[i].classList.remove("d-none");
+    }
+  }
+});
+
+$("#reset-tag").click(function () {
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].classList.contains("d-none")) {
+      items[i].classList.remove("d-none");
+    }
+  }
+});
