@@ -391,15 +391,16 @@ hr {
   .carousel-item {
     height: unset;
   }
+  .hero {
+    height: auto;
+  }
 }
 
 @media (max-width: 800px) {
-  .carousel {
-    width: 100%;
-  }
-
-  .carousel-item {
-    height: unset;
+  .img-inicial {
+    max-width: 400px;
+    display: block;
+    margin: 15px auto 0 auto;
   }
 
   .project-thumbnail {
