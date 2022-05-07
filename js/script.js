@@ -31,6 +31,17 @@ $(scrollTop).click(function () {
   );
   return false;
 }); // click() scroll top END
+
+$('.theme-changer').click(()=>{
+  if ($('body').hasClass('light')){
+    $('body').removeClass('light')
+    $('body').addClass('dark')
+  } else {
+    $('body').removeClass('dark')
+    $('body').addClass('light')
+  }
+})
+
 let items = $(".cards-row").children();
 $("#lp-tag").click(function () {
   for (var i = 0; i < items.length; i++) {

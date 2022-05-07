@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/ad1896aad6.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="loading">
+  <body class="loading light">
     <!-- Loader -->
     <div class="loader-container">
       <div class="loader">
@@ -29,27 +30,47 @@
         </svg>
       </div>
     </div>
-
+    <button class="theme-changer">
+      
+    </button>
     <div class="container-fluid conteudo">
-      <div id="intro" class="container">
-        <div class="row justify-content-center align-items-center">
+      <div id="intro" class="container-fluid hero">
+        <div data-aos="zoom-in" data-aos-duration="800" class="row justify-content-center align-items-center">
           <!-- <div class="col-lg-5">
              <img src="assets/ilustra2.png" alt="" class="img-fluid">
           </div> -->
-          <div class="col-lg-12">
-            <div class="intro-text">
-              <h1>Hello!</h1>
+          <div class="col-lg-5">
+            <img  src="assets/development-g0f94b4965_1280.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7">
+            <div  class="intro-text">
+              <h1 id="typewriter">Hello!</h1>
               <p>
-                I'm a front-end developer with 2+ years of experience and
+                My name is Luiz, I'm a front-end developer with 3+ years of experience,
                 currently based in Brazil. I build responsive, mobile-first web
-                apps and interfaces using these technologies:
+                apps and interfaces using mainly these technologies:
               </p>
               <div class="tech-icons">
-                <i title="HTML5" class="fa-brands fa-html5"></i>
-                <i title="CSS3" class="fa-brands fa-css3-alt"></i>
-                <i title="JavaScript" class="fa-brands fa-js"></i>
-                <i title="Bootstrap 5" class="fa-brands fa-bootstrap"></i>
-                <i title="React js" class="fa-brands fa-react"></i>
+                <div>
+                  <i title="HTML5" class="fa-brands fa-html5"></i>
+                  <p>HTML5</p>
+                </div>
+                <div>
+                  <i title="CSS3" class="fa-brands fa-css3-alt"></i>
+                  <p>CSS3</p>
+                </div>
+                <div>
+                  <i title="JavaScript" class="fa-brands fa-js"></i>
+                  <p>JavaScript</p>
+                </div>
+                <div>
+                  <i title="Bootstrap 5" class="fa-brands fa-bootstrap"></i>
+                  <p>Bootstrap 5</p>
+                </div>
+                <div>
+                  <i title="React js" class="fa-brands fa-react"></i>
+                  <p>ReactJS</p>
+                </div>
               </div>
               <p>
                 Here you can find some of the projects I worked on. Feel free to
@@ -59,7 +80,7 @@
                   target="_blank"
                   >upwork</a
                 >
-                or these social platforms:
+                or through these links:
               </p>
               <div class="links">
                 <a
@@ -85,11 +106,11 @@
           </div>
         </div>
       </div>
-      <div id="projects" class="container-fluid">
+      <div data-aos="zoom-in" data-aos-duration="800" id="projects" class="container-fluid">
         <div class="container">
           <h2>Projects</h2>
           <hr />
-          <p>Here are some of my personal and professional projects.</p>
+          <p>Here are some of my personal and professional freelance projects. You can find more in the links in the previous section.</p>
 
           <div class="tag-selector">
             <p id="lp-tag" class="tag">landing pages</p>
@@ -133,7 +154,25 @@
                 alt=""
                 class="project-thumbnail"
               />
-              <h3>React Js to-do app</h3>
+              <h3>React | Weather App</h3>
+              <p>
+                Simple to-do list app with theme switcher and listing options.
+              </p>
+
+              <a
+                href="https://criptoluiz.github.io/react-todo-app/"
+                target="_blank"
+                class="project-link"
+                >Live preview</a
+              >
+            </div>
+            <div class="project-card react-js">
+              <img
+                src="assets/REACT-TODO.png"
+                alt=""
+                class="project-thumbnail"
+              />
+              <h3>React | To-do App</h3>
               <p>
                 Simple to-do list app with theme switcher and listing options.
               </p>
@@ -151,7 +190,7 @@
                 alt=""
                 class="project-thumbnail"
               />
-              <h3>React Js Jobs Listing</h3>
+              <h3>React | Jobs Listing</h3>
               <p>
                 React js job listing web app with simple selectors for list.
               </p>
@@ -166,17 +205,10 @@
           </div>
         </div>
       </div>
-      <!-- <div id="contact" class="container-fluid">
-        <div class="container">
-          <h2>Contact</h2>
-          <hr />
-          <p>
-            You can contact me at <a href="linkedin.com">LinkedIn</a> or e-mail
-            me at
-            <a href="mailto:luiz.pb@cryptolab.net">luiz.pb@cryptolab.net</a>
-          </p>
-        </div>
-      </div> -->
+      <!--
+      Illustrations used:
+      https://pixabay.com/vectors/development-web-design-graphic-4536630/
+     -->
     </div>
 
     <div id="stop" class="scrollTop">
@@ -187,6 +219,17 @@
   </body>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/rellax.min.js"></script>
+  <script src="js/core.js"></script>
   <script src="js/aos.js"></script>
+  <script>
+    new Typewriter('#typewriter', {
+    strings: ['Hello!', 'Olá!', 'Ciao!', 'Hallo!', 'Hola!'],
+    autoStart: true,
+    loop: true
+  });
+    AOS.init()
+    var rellax = new Rellax('.rellax'); 
+  </script>
   <script src="js/script.js"></script>
 </html>

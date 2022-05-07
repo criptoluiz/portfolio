@@ -1,1 +1,2 @@
-# portfolio-v2
+# portfolio
+Simple web page for displaying my projects.

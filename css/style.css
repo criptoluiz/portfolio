@@ -1,13 +1,38 @@
+/* 
+    07/05 -> color pallete: 
+    dark blue: #102542
+    red/pink: #F87060
+    light gray: #CDD7D6
+    brown/grullo: #B3A394
+    white: #FFFFFF
+ */
+
+* {
+  transition-duration: .3s;
+}
+
 body {
-  background-color: #202935;
+  /* background-color: #202935; */
   min-height: 100vh;
 }
 
-* {
-  color: white;
+.dark {
+  background-color: #cecece;
+}
+
+.dark .hero {
+  background-color: #102542;
+}
+
+.dark .theme-changer {
+  background-color: #102542;
 }
 
 /* LOADER */
+.loading {
+  overflow: hidden;
+}
+
 .loader {
   position: relative;
   margin: 0 auto;
@@ -99,7 +124,11 @@ body {
 }
 
 .conteudo {
-  padding-top: 35px;
+  padding: 0;
+}
+
+.dark .scrollTop {
+  background-color: #102542;
 }
 
 .scrollTop {
@@ -107,7 +136,7 @@ body {
   right: 20px;
   bottom: 20px;
   border-radius: 200px;
-  background-color: #2d2d2d;
+  background-color: #F87060;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,20 +170,31 @@ h1 {
 }
 
 .intro-text {
-  padding-top: 30px;
+  padding-top: 80px;
   min-height: 500px;
+  padding-left: 15px;
 }
 
 .tech-icons {
   display: flex;
-  width: 450px;
+  max-width: 90%;
   font-size: 36px;
   justify-content: space-around;
-  background-color: #555555;
-  padding: 1em 0.5em;
+  background-color: white;
+  padding: 28px 0.5em;
   border-radius: 10px;
   box-shadow: 2px 3px 4px black;
   margin: 1em auto;
+  color: #102542;
+}
+
+.tech-icons div {
+  text-align: center;
+}
+
+.tech-icons div p {
+  font-size: 15px;
+  margin-bottom: 0;
 }
 
 .links {
@@ -173,10 +213,12 @@ a {
 h2 {
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 38px;
 }
 
 hr {
-  margin-bottom: 25px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .links i:hover {
@@ -194,16 +236,16 @@ hr {
   transition-duration: 0.3s;
 }
 
-#projects {
-  padding-bottom: 60px;
+.dark .tag {
+  background-color: #102542;
 }
 
 .tag {
   display: inline;
-  background-color: #cecece;
+  background-color: #F87060;
   padding: 5px;
   border-radius: 5px;
-  color: #202935;
+  color: white;
   transition-duration: 0.3s;
 }
 
@@ -211,11 +253,20 @@ hr {
   background-color: #f4f4f4;
   cursor: pointer;
   transition-duration: 0.3s;
+  color: #202920;
+}
+
+.dark #reset-tag {
+  background-color: #F87060;
+}
+
+.dark #reset-tag:hover {
+  background-color: white;
 }
 
 #reset-tag {
   margin-left: 25px;
-  background-color: #4e6481;
+  background-color: #102542;
   color: #f4f4f4;
 }
 
@@ -227,15 +278,29 @@ hr {
 .cards-row {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+#projects {
+  padding-bottom: 40px;
 }
 
 .project-card {
   width: 30%;
   border: 1px solid #cecece;
   border-radius: 5px;
-  margin: 15px;
+  margin: 5px 5px;
   padding: 5px 15px 15px 15px;
   transition-duration: 0.3s;
+}
+
+.dark .project-card {
+  border: 1px solid white;
+}
+
+.dark .project-link {
+  border: 2px solid white;
+  
 }
 
 .project-thumbnail {
@@ -248,7 +313,7 @@ hr {
 
 .project-link {
   display: block;
-  border: 2px solid white;
+  border: 2px solid #cecece;
   width: 150px;
   padding: 0.5em 1em;
   margin: 0.2em auto;
@@ -256,13 +321,14 @@ hr {
   text-align: center;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   transition-duration: 0.3s;
+  color: black;
 }
 
 .project-link:hover {
-  background-color: white;
-  color: #555555;
+  background-color: #F87060;
+  color: white;
   transition-duration: 0.3s;
 }
 
@@ -280,6 +346,43 @@ hr {
 .tag-selector {
   margin-left: 15px;
 }
+
+.hero {
+  display: block;
+  box-sizing: border-box;
+  background-color: #F87060;
+  clip-path: ellipse(96% 100% at 50% 0%);
+  color: white;  
+  height: 90vh;
+  padding: 30px 25px 100px 25px;
+  }
+
+.theme-changer {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F87060;
+  border-radius: 100px;
+  border: none;
+  z-index: 1000;
+}
+
+.light .theme-changer {
+  background-image: url('../assets/icon-moon.svg');
+}
+
+.dark .theme-changer {
+  background-image: url('../assets/icon-sun.svg');
+}
+
+  .theme-changer:hover {
+    
+  }
 
 @media (max-width: 1080px) {
   .project-thumbnail {
