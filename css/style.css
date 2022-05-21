@@ -353,7 +353,7 @@ hr {
   background-color: #F87060;
   clip-path: ellipse(96% 100% at 50% 0%);
   color: white;  
-  height: 90vh;
+  min-height: 90vh;
   padding: 30px 25px 100px 25px;
   }
 
